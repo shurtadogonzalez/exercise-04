@@ -1,0 +1,53 @@
+---
+title: "Untitled"
+author: "Stephanie Hurtado" 
+output: html_document
+---
+
+# Header 1 
+## Header 2
+### Header 3
+
+*****
+
+-first 
+  - first 2
+-second
+-third
+
+1. first 
+2. second
+3. third
+
+```{r}
+plot(1:105, 1:105)
+```
+
+
+#### optioncommandi 
+```{r, warning= FALSE, message = FALSE, echo = FALSE}
+library(tidyverse)
+```
+
+```{r, message= FALSE} 
+cities = readr::read_csv("../data/uscities.csv")
+```
+
+
+```{r}
+threshold= 100000
+```
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
