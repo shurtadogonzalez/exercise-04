@@ -178,7 +178,7 @@ cities %>%
 
 ```{r, echo = FALSE}
 threshold = 100000
-big_cities = 
+big_cities =  
   filter(cities, population > threshold) %>%
   filter(!state_name %in% c("Alaska", "Hawaii", "Puerto Rico"))
 ```
